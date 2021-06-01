@@ -1,8 +1,29 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: fantasy;
 }
+#header {
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+}
+.banner-area {
+  position: relative;
+  background: url("images/umberto-FewHpO4VC9Y-unsplash.jpg");
+  width: 100%%;
+  height: 500px;
+  background-repeat: no-repeate;
+  /* -webkit-background-size: cover; */
+  background-size: cover;
+}
+
+body {
+  font-family: fantasy;
+  background: url("images/gradienta-m_7p45JfXQo-unsplash.jpg");
+  line-height: 1.6;
+  height: 100vh;
+}
+
 .navbar {
   position: fixed;
   display: flex;
@@ -14,6 +35,7 @@ body {
   width: 100%;
   height: 70px;
   z-index: 1;
+  /* top: 0; */
 }
 .nav {
   display: flex;
@@ -39,15 +61,88 @@ a {
 a:hover {
   color: blue;
 }
-.banner-area {
-  position: relative;
-  /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123freevectors.com%2Fshiny-abstract-pink-and-blue-background-vector-image-169733%2F&psig=AOvVaw1vlNxLXoQ9XoeiqcIS8-cs&ust=1622308818980000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjckrnx7PACFQAAAAAdAAAAABAa); */
-  width: 50%;
-  height: 50vh;
-  background-repeat: no-repeate;
-  -webkit-background-size: cover;
-  background-size: cover;
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
 }
+
+h1 {
+  font-size: 50px;
+  font-family: Audiowide;
+  text-align: center;
+  position: relative;
+}
+p {
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+/* CARD CSS */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+/* .about-area {
+  background-color:
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} 
+.projects-area {
+    background-color:
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  } 
+.tech-area {
+    background-color:
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  } 
+.contact-area {
+    background-color:
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }  */
+
+/* extra code notes  */
+/* .container {
+  width: 100%;
+  height: 100%;
+  /* css smooth scroll */
+/* overflow-y: scroll;
+  scroll-behavior: smooth;
+} */
+
+/* background: url(images/matrixbackground.jpeg); */
+/* background-repeat: no-repeat; */
+/* html {
+  /* scroll-behavior: smooth; */
+/* scroll-snap-type: y mandatory; */
+
+/* /////// */
+
 /* .about-area,
 .projects-area,
 .tech-area,
@@ -60,32 +155,4 @@ a:hover {
   flex-direction: row;
   width: 100%;
   height: 700px;
-} */
-.text-part {
-  width: 65%;
-  height: 80%;
-}
-
-h1 {
-  font-size: 50px;
-  font-family: Audiowide;
-  text-align: center;
-}
-p {
-  font-size: 24px;
-  line-height: 50px;
-  text-align: center;
-}
-
-/* .about-area,
-.projects-area {
-  background: #fefefe;
-}
-.tech-area,
-.contact-area {
-  background: gray;
-  color: blueviolet;
-} */
-html {
-  scroll-behavior: smooth;
-}
+}  */
